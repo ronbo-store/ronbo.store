@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>🍃 RONBO official website — Peace • Balance • Wellness | Sitio oficial de RONBO — Paz • Equilibrio • Bienestar</title>
+  <title>RONBO — Peace • Balance • Wellness | Paz • Equilibrio • Bienestar</title>
   <meta name="description" content="RONBO — Peace • Balance • Wellness. Coming soon. | Paz • Equilibrio • Bienestar. Próximamente." />
   <link rel="icon" href="favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
@@ -38,14 +38,12 @@
       from { opacity: 0; transform: translateY(24px); }
       to { opacity: 1; transform: translateY(0); }
     }
-    .leaf { font-size: 3.5rem; display: block; margin-bottom: 1.25rem; filter: drop-shadow(0 6px 16px rgba(0,0,0,.35)); }
-    h1 {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-weight: 500;
-      font-size: clamp(3rem, 9vw, 5rem);
-      letter-spacing: .35em;
-      text-indent: .35em;
-      margin-bottom: .75rem;
+    .logo {
+      width: min(400px, 76vw);
+      height: auto;
+      display: block;
+      margin: 0 auto 1.4rem;
+      filter: drop-shadow(0 8px 24px rgba(0,0,0,.45));
     }
     .tagline {
       font-weight: 300;
@@ -74,8 +72,36 @@
       text-transform: uppercase;
       font-size: .8rem;
       color: var(--sage);
+      margin-bottom: 2.25rem;
+    }
+    .socials {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: .8rem;
       margin-bottom: 2.5rem;
     }
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      padding: .7rem 1.25rem;
+      border: 1px solid rgba(201,169,106,.45);
+      border-radius: 999px;
+      color: var(--cream);
+      text-decoration: none;
+      font-weight: 400;
+      font-size: .85rem;
+      letter-spacing: .06em;
+      transition: border-color .25s, background .25s, transform .25s;
+    }
+    .social-link:hover {
+      border-color: var(--gold);
+      background: rgba(201,169,106,.12);
+      transform: translateY(-1px);
+    }
+    .social-link .handle { color: var(--gold); font-weight: 500; }
+    .social-link .arrow { font-size: .75rem; opacity: .7; }
     footer {
       font-size: .75rem;
       font-weight: 300;
@@ -86,13 +112,16 @@
 </head>
 <body>
   <main class="card">
-    <span class="leaf">🍃</span>
-    <h1>RONBO</h1>
+    <img class="logo" src="ronbo-logo.webp" alt="Ronbo — Peace, Balance, Wellness" />
     <p class="tagline">Peace • Balance • Wellness</p>
     <div class="rule"></div>
     <p class="soon">Coming Soon</p>
     <p class="soon-es">Próximamente &nbsp;•&nbsp; Paz • Equilibrio • Bienestar</p>
-    <footer>© RONBO — ronbo.store</footer>
+    <div class="socials">
+      <a class="social-link" href="https://www.tiktok.com/@ronbo.store" target="_blank" rel="noopener">TikTok <span class="handle">@ronbo.store</span> <span class="arrow">↗</span></a>
+      <a class="social-link" href="https://www.instagram.com/ronbo.store" target="_blank" rel="noopener">Instagram <span class="handle">@ronbo.store</span> <span class="arrow">↗</span></a>
+    </div>
+    <footer>© 2026 RONBO — ronbo.store</footer>
   </main>
 </body>
 </html>
