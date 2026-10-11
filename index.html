@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RONBO — Peace • Balance • Wellness | Paz • Equilibrio • Bienestar</title>
-  <meta name="description" content="RONBO — Peace • Balance • Wellness. Coming soon. | Paz • Equilibrio • Bienestar. Próximamente." />
+  <title>RONBO — Peace • Balance • Wellness | Natural Wellness Essentials</title>
+  <meta name="description" content="RONBO — Peace • Balance • Wellness. Natural wellness essentials: crystal jewelry and mindful goods. | Paz • Equilibrio • Bienestar." />
   <link rel="icon" href="favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root {
       --forest: #0d3b2e;
@@ -21,106 +21,163 @@
       --sage: #9db8a4;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body { height: 100%; }
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      background: radial-gradient(1200px 800px at 50% 20%, #12503f 0%, var(--forest) 55%, var(--forest-deep) 100%);
+      background: radial-gradient(1200px 800px at 50% 0%, #12503f 0%, var(--forest) 55%, var(--forest-deep) 100%);
+      background-attachment: fixed;
       color: var(--cream);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
       min-height: 100vh;
-      padding: 2rem;
     }
-    .card { max-width: 640px; animation: rise 1.2s ease-out both; }
-    @keyframes rise {
-      from { opacity: 0; transform: translateY(24px); }
-      to { opacity: 1; transform: translateY(0); }
+    a { color: inherit; }
+    /* ---------- nav ---------- */
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 1.5rem; max-width: 1080px; margin: 0 auto;
     }
-    .logo {
-      width: min(400px, 76vw);
-      height: auto;
-      display: block;
-      margin: 0 auto 1.4rem;
-      filter: drop-shadow(0 8px 24px rgba(0,0,0,.45));
+    .brand { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.5rem; letter-spacing: .22em; color: var(--cream); text-decoration: none; }
+    .brand span { color: var(--gold); }
+    .nav-links { display: flex; gap: 1.25rem; font-size: .85rem; letter-spacing: .08em; }
+    .nav-links a { text-decoration: none; opacity: .85; transition: opacity .2s; }
+    .nav-links a:hover { opacity: 1; color: var(--gold); }
+    /* ---------- hero ---------- */
+    .hero { text-align: center; padding: 2.5rem 1.5rem 3rem; max-width: 720px; margin: 0 auto; animation: rise 1s ease-out both; }
+    @keyframes rise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+    .hero .logo { width: min(300px, 64vw); height: auto; display: block; margin: 0 auto 1.2rem; filter: drop-shadow(0 8px 24px rgba(0,0,0,.45)); }
+    .tagline { font-weight: 300; letter-spacing: .28em; text-indent: .28em; text-transform: uppercase; font-size: clamp(.7rem, 2.4vw, .9rem); color: var(--gold); }
+    .tagline-es { margin-top: .5rem; font-weight: 300; letter-spacing: .18em; text-indent: .18em; text-transform: uppercase; font-size: .72rem; color: var(--sage); }
+    .rule { width: 72px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); margin: 1.5rem auto; }
+    .hero p.lead { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: clamp(1.15rem, 3.6vw, 1.5rem); color: var(--cream); opacity: .92; }
+    .hero p.lead-es { margin-top: .4rem; font-size: .85rem; font-weight: 300; letter-spacing: .06em; color: var(--sage); }
+    .cta {
+      display: inline-block; margin-top: 1.6rem; padding: .85rem 2rem;
+      border: 1px solid rgba(201,169,106,.6); border-radius: 999px;
+      text-decoration: none; font-size: .85rem; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--cream); transition: background .25s, transform .25s;
     }
-    .tagline {
-      font-weight: 300;
-      letter-spacing: .28em;
-      text-indent: .28em;
-      text-transform: uppercase;
-      font-size: clamp(.7rem, 2.4vw, .95rem);
-      color: var(--gold);
-      margin-bottom: 2rem;
+    .cta:hover { background: rgba(201,169,106,.15); transform: translateY(-1px); }
+    /* ---------- shop ---------- */
+    .shop { max-width: 1080px; margin: 0 auto; padding: 1rem 1.5rem 3rem; }
+    .section-title { text-align: center; font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(1.6rem, 5vw, 2.2rem); margin-bottom: .3rem; }
+    .section-sub { text-align: center; font-size: .78rem; letter-spacing: .2em; text-transform: uppercase; color: var(--sage); margin-bottom: 2rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; }
+    .card {
+      background: rgba(245,241,232,.05);
+      border: 1px solid rgba(201,169,106,.28);
+      border-radius: 18px; overflow: hidden;
+      transition: transform .25s, border-color .25s;
     }
-    .rule {
-      width: 72px; height: 1px;
-      background: linear-gradient(90deg, transparent, var(--gold), transparent);
-      margin: 0 auto 2rem;
+    .card:hover { transform: translateY(-4px); border-color: rgba(201,169,106,.6); }
+    .card img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; background: #0a2a21; }
+    .card-body { padding: 1.25rem 1.25rem 1.4rem; }
+    .card-body h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.25rem; font-weight: 600; margin-bottom: .25rem; }
+    .card-body .es { font-size: .82rem; color: var(--sage); font-weight: 300; margin-bottom: .6rem; }
+    .card-body .desc { font-size: .85rem; font-weight: 300; line-height: 1.55; opacity: .85; margin-bottom: .6rem; }
+    .card-body .desc-es { font-size: .8rem; font-weight: 300; line-height: 1.5; color: var(--sage); margin-bottom: 1rem; }
+    .price-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; }
+    .price { font-size: 1.4rem; font-weight: 600; color: var(--gold); }
+    .stock { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--sage); }
+    .buy {
+      display: block; text-align: center; padding: .8rem 1rem; border-radius: 999px;
+      background: var(--gold); color: #0d3b2e; font-weight: 600; font-size: .85rem;
+      letter-spacing: .08em; text-transform: uppercase; text-decoration: none;
+      transition: filter .2s, transform .2s;
     }
-    .soon {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-style: italic;
-      font-size: clamp(1.4rem, 4.5vw, 2rem);
-      margin-bottom: .5rem;
-    }
-    .soon-es {
-      font-weight: 300;
-      letter-spacing: .18em;
-      text-indent: .18em;
-      text-transform: uppercase;
-      font-size: .8rem;
-      color: var(--sage);
-      margin-bottom: 2.25rem;
-    }
-    .socials {
-      margin-top: .5rem;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: .8rem;
-      margin-bottom: 2.5rem;
-    }
+    .buy:hover { filter: brightness(1.08); transform: translateY(-1px); }
+    .buy small { display: block; font-weight: 400; font-size: .68rem; letter-spacing: .06em; text-transform: none; margin-top: .15rem; opacity: .75; }
+    .more { text-align: center; margin-top: 2rem; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 1.1rem; color: var(--sage); }
+    /* ---------- about ---------- */
+    .about { max-width: 720px; margin: 0 auto; padding: 0 1.5rem 3rem; text-align: center; }
+    .about p { font-weight: 300; line-height: 1.7; font-size: .95rem; opacity: .88; margin-bottom: .8rem; }
+    .about p.es { color: var(--sage); font-size: .88rem; }
+    /* ---------- footer ---------- */
+    footer { border-top: 1px solid rgba(201,169,106,.2); padding: 2rem 1.5rem; text-align: center; }
+    .socials { display: flex; justify-content: center; flex-wrap: wrap; gap: .8rem; margin-bottom: 1.25rem; }
     .social-link {
-      display: inline-flex;
-      align-items: center;
-      gap: .55rem;
-      padding: .7rem 1.25rem;
-      border: 1px solid rgba(201,169,106,.45);
-      border-radius: 999px;
-      color: var(--cream);
-      text-decoration: none;
-      font-weight: 400;
-      font-size: .85rem;
-      letter-spacing: .06em;
-      transition: border-color .25s, background .25s, transform .25s;
+      display: inline-flex; align-items: center; gap: .55rem;
+      padding: .65rem 1.2rem; border: 1px solid rgba(201,169,106,.45); border-radius: 999px;
+      text-decoration: none; font-size: .82rem; letter-spacing: .05em;
+      transition: border-color .25s, background .25s;
     }
-    .social-link:hover {
-      border-color: var(--gold);
-      background: rgba(201,169,106,.12);
-      transform: translateY(-1px);
-    }
+    .social-link:hover { border-color: var(--gold); background: rgba(201,169,106,.12); }
     .social-link .handle { color: var(--gold); font-weight: 500; }
-    .social-link .arrow { font-size: .75rem; opacity: .7; }
-    footer {
-      font-size: .75rem;
-      font-weight: 300;
-      letter-spacing: .12em;
-      color: rgba(245, 241, 232, .55);
-    }
+    .copy { font-size: .72rem; font-weight: 300; letter-spacing: .12em; color: rgba(245,241,232,.5); }
   </style>
 </head>
 <body>
-  <main class="card">
+
+  <nav>
+    <a class="brand" href="#">R<span>O</span>NB<span>O</span></a>
+    <div class="nav-links">
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="https://www.tiktok.com/@ronbo.store" target="_blank" rel="noopener">TikTok</a>
+    </div>
+  </nav>
+
+  <header class="hero">
     <img class="logo" src="ronbo-logo.webp" alt="Ronbo — Peace, Balance, Wellness" />
     <p class="tagline">Peace • Balance • Wellness</p>
+    <p class="tagline-es">Paz • Equilibrio • Bienestar</p>
     <div class="rule"></div>
-    <div class="socials">
-      <a class="social-link" href="https://www.tiktok.com/@ronbo.store" target="_blank" rel="noopener">TikTok <span class="handle">@ronbo.store</span> <span class="arrow">↗</span></a>
-      <a class="social-link" href="https://www.instagram.com/ronbo.store" target="_blank" rel="noopener">Instagram <span class="handle">@ronbo.store</span> <span class="arrow">↗</span></a>
+    <p class="lead">Natural wellness essentials, chosen with intention.</p>
+    <p class="lead-es">Esenciales de bienestar natural, elegidos con intención.</p>
+    <a class="cta" href="#shop">Shop now &nbsp;·&nbsp; Comprar</a>
+  </header>
+
+  <section class="shop" id="shop">
+    <h2 class="section-title">Shop</h2>
+    <p class="section-sub">Tienda</p>
+    <div class="grid">
+
+      <article class="card">
+        <img src="product-1-tree-of-life.jpg" alt="Tree of Life Crystal Pendant Necklace" />
+        <div class="card-body">
+          <h3>Tree of Life Crystal Pendant Necklace</h3>
+          <p class="es">Collar con colgante Árbol de la Vida de cristal</p>
+          <p class="desc">Natural healing crystal pendant on a delicate chain — a timeless symbol of growth, strength and connection. Perfect for everyday wear or as a meaningful gift.</p>
+          <p class="desc-es">Colgante de cristal natural en una delicada cadena — símbolo de crecimiento, fuerza y conexión. Perfecto para el día a día o como un regalo especial.</p>
+          <div class="price-row">
+            <span class="price">$12.99</span>
+            <span class="stock">In stock</span>
+          </div>
+          <a class="buy" href="https://www.tiktok.com/@ronbo.store" target="_blank" rel="noopener">Buy on TikTok Shop<small>Comprar en TikTok Shop</small></a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="product-3-moon-necklace.jpg" alt="Chakra Moon Necklace" />
+        <div class="card-body">
+          <h3>Chakra Moon Necklace</h3>
+          <p class="es">Collar Luna de chakras</p>
+          <p class="desc">Delicate moon pendant with natural chakra stones — a celestial piece for intuition, harmony and everyday mindfulness.</p>
+          <p class="desc-es">Delicado colgante de luna con piedras naturales de chakras — una pieza celestial para la intuición, la armonía y el mindfulness diario.</p>
+          <div class="price-row">
+            <span class="price">$12.99</span>
+            <span class="stock">In stock</span>
+          </div>
+          <a class="buy" href="https://www.tiktok.com/@ronbo.store" target="_blank" rel="noopener">Buy on TikTok Shop<small>Comprar en TikTok Shop</small></a>
+        </div>
+      </article>
+
     </div>
-    <footer>© 2026 RONBO — ronbo.store</footer>
-  </main>
+    <p class="more">More mindful goods coming soon · Más productos próximamente</p>
+  </section>
+
+  <section class="about" id="about">
+    <h2 class="section-title">About</h2>
+    <p class="section-sub">Nosotros</p>
+    <div class="rule"></div>
+    <p>RONBO is a small wellness brand built on a simple belief: peace, balance and wellness are daily practices. Every piece is chosen with intention — natural materials, honest prices, shipped with care from the USA.</p>
+    <p class="es">RONBO es una pequeña marca de bienestar con una creencia simple: la paz, el equilibrio y el bienestar se practican a diario. Cada pieza es elegida con intención — materiales naturales, precios honestos, envío con cuidado desde EE. UU.</p>
+  </section>
+
+  <footer>
+    <div class="socials">
+      <a class="social-link" href="https://www.tiktok.com/@ronbo.store" target="_blank" rel="noopener">TikTok <span class="handle">@ronbo.store</span></a>
+      <a class="social-link" href="https://www.instagram.com/ronbo.store" target="_blank" rel="noopener">Instagram <span class="handle">@ronbo.store</span></a>
+    </div>
+    <p class="copy">© 2026 RONBO — ronbo.store · Peace • Balance • Wellness</p>
+  </footer>
+
 </body>
 </html>
