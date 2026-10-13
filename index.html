@@ -101,7 +101,7 @@
     a { color: inherit; }
     /* ---------- nav ---------- */
     nav {
-      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
       padding: 1rem 1.5rem; max-width: 1080px; margin: 0 auto;
     }
     .brand { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.5rem; letter-spacing: .22em; color: var(--cream); text-decoration: none; }
@@ -210,7 +210,7 @@
 
   <header class="hero">
     <h1 class="visually-hidden"><span data-lang="en">RONBO — Natural wellness essentials</span><span data-lang="es" hidden>Esenciales de bienestar natural</span></h1>
-    <img class="logo" src="ronbo-logo.webp" alt="Ronbo — Peace, Balance, Wellness" width="1400" height="631" fetchpriority="high" />
+    <img class="logo" src="ronbo-logo.webp" data-alt-es="Ronbo — Paz, Equilibrio, Bienestar" alt="Ronbo — Peace, Balance, Wellness" width="1400" height="631" fetchpriority="high" />
     <p class="tagline" data-lang="en">Peace • Balance • Wellness</p>
     <p class="tagline" data-lang="es" hidden>Paz • Equilibrio • Bienestar</p>
     <div class="rule"></div>
@@ -229,7 +229,7 @@
       <article class="card" data-product="tree-of-life">
         <picture>
           <source srcset="product-1-tree-of-life.webp" type="image/webp" />
-          <img src="product-1-tree-of-life.jpg" alt="Tree of Life Crystal Pendant Necklace" width="1000" height="1000" loading="lazy" />
+          <img src="product-1-tree-of-life.jpg" data-alt-es="Collar Árbol de la Vida" alt="Tree of Life Crystal Pendant Necklace" width="1000" height="1000" loading="lazy" />
         </picture>
         <div class="card-body">
           <h3 data-lang="en">Tree of Life Crystal Pendant Necklace</h3>
@@ -251,7 +251,7 @@
       <article class="card" data-product="chakra-moon">
         <picture>
           <source srcset="product-3-moon-necklace.webp" type="image/webp" />
-          <img src="product-3-moon-necklace.jpg" alt="Chakra Moon Necklace" width="1000" height="1000" loading="lazy" />
+          <img src="product-3-moon-necklace.jpg" data-alt-es="Collar Luna de chakras" alt="Chakra Moon Necklace" width="1000" height="1000" loading="lazy" />
         </picture>
         <div class="card-body">
           <h3 data-lang="en">Chakra Moon Necklace</h3>
@@ -271,7 +271,7 @@
       <article class="card" data-product="chakra-bracelet">
         <picture>
           <source srcset="product-2-chakra-bracelet.webp" type="image/webp" />
-          <img src="product-2-chakra-bracelet.jpg" alt="7-Chakra Beaded Bracelet" width="589" height="576" loading="lazy" />
+          <img src="product-2-chakra-bracelet.jpg" data-alt-es="Pulsera 7 chakras" alt="7-Chakra Beaded Bracelet" width="589" height="576" loading="lazy" />
         </picture>
         <div class="card-body">
           <h3 data-lang="en">7-Chakra Beaded Bracelet</h3>
@@ -293,7 +293,7 @@
       <article class="card" data-product="reiki-pendant">
         <picture>
           <source srcset="product-4-reiki-pendant.webp" type="image/webp" />
-          <img src="product-4-reiki-pendant.jpg" alt="Reiki Healing Pendant" width="800" height="800" loading="lazy" />
+          <img src="product-4-reiki-pendant.jpg" data-alt-es="Collar con colgante de Reiki" alt="Reiki Healing Pendant" width="800" height="800" loading="lazy" />
         </picture>
         <div class="card-body">
           <h3 data-lang="en">Reiki Healing Pendant Necklace</h3>
@@ -315,7 +315,7 @@
       <article class="card" data-product="gua-sha">
         <picture>
           <source srcset="product-5-gua-sha.webp" type="image/webp" />
-          <img src="product-5-gua-sha.png" alt="Gua Sha 2-Piece Set" width="751" height="750" loading="lazy" />
+          <img src="product-5-gua-sha.png" data-alt-es="Set de Gua Sha de 2 piezas" alt="Gua Sha 2-Piece Set" width="751" height="750" loading="lazy" />
         </picture>
         <div class="card-body">
           <h3 data-lang="en">Gua Sha 2-Piece Set</h3>
@@ -337,7 +337,7 @@
       <article class="card" data-product="yoga-belt">
         <picture>
           <source srcset="product-6-yoga-belt.webp" type="image/webp" />
-          <img src="product-6-yoga-belt.jpg" alt="Yoga Stretching Belt" width="800" height="800" loading="lazy" />
+          <img src="product-6-yoga-belt.jpg" data-alt-es="Cinturón de estiramiento para yoga" alt="Yoga Stretching Belt" width="800" height="800" loading="lazy" />
         </picture>
         <div class="card-body">
           <h3 data-lang="en">Yoga Stretching Belt</h3>
@@ -375,7 +375,7 @@
       <a class="social-link" href="https://www.tiktok.com/@ronbo.store" target="_blank" rel="noopener">TikTok <span class="handle">@ronbo.store</span></a>
       <a class="social-link" href="https://www.instagram.com/ronbo.store" target="_blank" rel="noopener">Instagram <span class="handle">@ronbo.store</span></a>
     </div>
-    <p class="copy">© 2026 RONBO — ronbo.store · Peace • Balance • Wellness</p>
+    <p class="copy">© 2026 RONBO — ronbo.store · <span data-lang="en">Peace • Balance • Wellness</span><span data-lang="es" hidden>Paz • Equilibrio • Bienestar</span></p>
   </footer>
 
   <!-- ============================================================
@@ -400,6 +400,10 @@
       root.setAttribute('lang', l);
       document.querySelectorAll('[data-lang]').forEach(function (el) {
         el.hidden = el.getAttribute('data-lang') !== l;
+      });
+      document.querySelectorAll('img[data-alt-es]').forEach(function (img) {
+        if (!img.getAttribute('data-alt-en')) img.setAttribute('data-alt-en', img.alt);
+        img.alt = (l === 'es') ? img.getAttribute('data-alt-es') : img.getAttribute('data-alt-en');
       });
       document.querySelectorAll('.lang-toggle button').forEach(function (b) {
         b.setAttribute('aria-pressed', b.getAttribute('data-setlang') === l ? 'true' : 'false');
