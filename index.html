@@ -5,6 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RONBO — Peace • Balance • Wellness | Natural Wellness Essentials</title>
   <meta name="description" content="RONBO — Peace • Balance • Wellness. Natural wellness essentials: crystal jewelry and mindful goods. | Paz • Equilibrio • Bienestar." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://ronbo.store/" />
+  <meta name="theme-color" content="#0d3b2e" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="RONBO.STORE" />
+  <meta property="og:url" content="https://ronbo.store/" />
+  <meta property="og:title" content="RONBO — Peace • Balance • Wellness | Natural Wellness Essentials" />
+  <meta property="og:description" content="Natural wellness essentials: crystal jewelry and mindful goods, chosen with intention. | Esenciales de bienestar natural, elegidos con intención." />
+  <meta property="og:image" content="https://ronbo.store/ronbo-logo.webp" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="RONBO — Peace • Balance • Wellness" />
+  <meta name="twitter:description" content="Natural wellness essentials: crystal jewelry and mindful goods. | Esenciales de bienestar natural." />
+  <meta name="twitter:image" content="https://ronbo.store/ronbo-logo.webp" />
   <link rel="icon" href="favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
@@ -12,6 +29,45 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://ronbo.store/#org",
+        "name": "RONBO.STORE",
+        "url": "https://ronbo.store/",
+        "logo": "https://ronbo.store/ronbo-logo.webp",
+        "slogan": "Peace • Balance • Wellness",
+        "sameAs": [
+          "https://www.tiktok.com/@ronbo.store",
+          "https://www.instagram.com/ronbo.store"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://ronbo.store/#site",
+        "url": "https://ronbo.store/",
+        "name": "RONBO.STORE",
+        "inLanguage": ["en", "es"],
+        "publisher": { "@id": "https://ronbo.store/#org" }
+      },
+      {
+        "@type": "ItemList",
+        "name": "RONBO.STORE catalog",
+        "itemListElement": [
+          { "@type": "Product", "position": 1, "name": "Tree of Life Crystal Pendant Necklace", "image": "https://ronbo.store/product-1-tree-of-life.jpg", "description": "Natural healing crystal pendant on a delicate chain — a timeless symbol of growth, strength and connection.", "brand": { "@id": "https://ronbo.store/#org" } },
+          { "@type": "Product", "position": 2, "name": "Chakra Moon Necklace", "image": "https://ronbo.store/product-3-moon-necklace.jpg", "description": "Delicate moon pendant with natural chakra stones — a celestial piece for intuition, harmony and everyday mindfulness.", "brand": { "@id": "https://ronbo.store/#org" } },
+          { "@type": "Product", "position": 3, "name": "7-Chakra Beaded Bracelet", "image": "https://ronbo.store/product-2-chakra-bracelet.jpg", "description": "Natural stone beaded bracelet aligned with the seven chakras — a daily reminder of balance, calm and positive energy.", "brand": { "@id": "https://ronbo.store/#org" } },
+          { "@type": "Product", "position": 4, "name": "Reiki Healing Pendant Necklace", "image": "https://ronbo.store/product-4-reiki-pendant.jpg", "description": "Natural stone pendant inspired by reiki practice — a grounding accessory for meditation, yoga and intentional living.", "brand": { "@id": "https://ronbo.store/#org" } },
+          { "@type": "Product", "position": 5, "name": "Gua Sha 2-Piece Set", "image": "https://ronbo.store/product-5-gua-sha.png", "description": "Natural stone gua sha set for facial massage rituals — for a mindful self-care routine, morning and night.", "brand": { "@id": "https://ronbo.store/#org" } },
+          { "@type": "Product", "position": 6, "name": "Yoga Stretching Belt", "image": "https://ronbo.store/product-6-yoga-belt.jpg", "description": "Adjustable stretching strap for yoga, dance and flexibility training — deepen every stretch with support and control.", "brand": { "@id": "https://ronbo.store/#org" } }
+        ]
+      }
+    ]
+  }
+  </script>
   <style>
     :root {
       --forest: #0d3b2e;
@@ -21,6 +77,20 @@
       --sage: #9db8a4;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    .visually-hidden {
+      position: absolute !important; width: 1px; height: 1px;
+      margin: -1px; padding: 0; overflow: hidden;
+      clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+    }
+    .skip {
+      position: absolute; left: -9999px; top: 0; z-index: 99;
+      background: var(--gold); color: #0d3b2e;
+      padding: .6rem 1rem; border-radius: 0 0 8px 0;
+      font-size: .8rem; font-weight: 600; text-decoration: none;
+    }
+    .skip:focus { left: 0; }
+    :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
       background: radial-gradient(1200px 800px at 50% 0%, #12503f 0%, var(--forest) 55%, var(--forest-deep) 100%);
@@ -31,20 +101,30 @@
     a { color: inherit; }
     /* ---------- nav ---------- */
     nav {
-      display: flex; align-items: center; justify-content: space-between;
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
       padding: 1rem 1.5rem; max-width: 1080px; margin: 0 auto;
     }
     .brand { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.5rem; letter-spacing: .22em; color: var(--cream); text-decoration: none; }
     .brand span { color: var(--gold); }
+    .nav-right { display: flex; align-items: center; gap: 1rem; }
     .nav-links { display: flex; gap: 1.25rem; font-size: .85rem; letter-spacing: .08em; }
     .nav-links a { text-decoration: none; opacity: .85; transition: opacity .2s; }
     .nav-links a:hover { opacity: 1; color: var(--gold); }
+    .lang-toggle { display: flex; gap: .35rem; }
+    .lang-toggle button {
+      background: transparent; border: 1px solid rgba(201,169,106,.45);
+      color: var(--cream); border-radius: 999px; padding: .35rem .8rem;
+      font-size: .72rem; letter-spacing: .08em; cursor: pointer;
+      transition: background .2s, color .2s;
+    }
+    .lang-toggle button[aria-pressed="true"] {
+      background: var(--gold); color: #0d3b2e; border-color: var(--gold); font-weight: 600;
+    }
     /* ---------- hero ---------- */
     .hero { text-align: center; padding: 2.5rem 1.5rem 3rem; max-width: 720px; margin: 0 auto; animation: rise 1s ease-out both; }
     @keyframes rise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
     .hero .logo { width: min(300px, 64vw); height: auto; display: block; margin: 0 auto 1.2rem; filter: drop-shadow(0 8px 24px rgba(0,0,0,.45)); }
     .tagline { font-weight: 300; letter-spacing: .28em; text-indent: .28em; text-transform: uppercase; font-size: clamp(.7rem, 2.4vw, .9rem); color: var(--gold); }
-    .tagline-es { margin-top: .5rem; font-weight: 300; letter-spacing: .18em; text-indent: .18em; text-transform: uppercase; font-size: .72rem; color: var(--sage); }
     .rule { width: 72px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); margin: 1.5rem auto; }
     .hero p.lead { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: clamp(1.15rem, 3.6vw, 1.5rem); color: var(--cream); opacity: .92; }
     .hero p.lead-es { margin-top: .4rem; font-size: .85rem; font-weight: 300; letter-spacing: .06em; color: var(--sage); }
@@ -67,7 +147,7 @@
       transition: transform .25s, border-color .25s;
     }
     .card:hover { transform: translateY(-4px); border-color: rgba(201,169,106,.6); }
-    .card img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; background: #0a2a21; }
+    .card picture, .card img { width: 100%; aspect-ratio: 1; object-fit: cover; display: block; background: #0a2a21; }
     .card-body { padding: 1.25rem 1.25rem 1.4rem; }
     .card-body h3 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.25rem; font-weight: 600; margin-bottom: .25rem; }
     .card-body .es { font-size: .82rem; color: var(--sage); font-weight: 300; margin-bottom: .6rem; }
@@ -83,7 +163,11 @@
       transition: filter .2s, transform .2s;
     }
     .buy:hover { filter: brightness(1.08); transform: translateY(-1px); }
-    .buy small { display: block; font-weight: 400; font-size: .68rem; letter-spacing: .06em; text-transform: none; margin-top: .15rem; opacity: .75; }
+    .buy-disabled {
+      background: transparent; border: 1px solid rgba(201,169,106,.4);
+      color: var(--sage); cursor: not-allowed;
+    }
+    .buy-disabled:hover { filter: none; transform: none; }
     .more { text-align: center; margin-top: 2rem; font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 1.1rem; color: var(--sage); }
     /* ---------- about ---------- */
     .about { max-width: 720px; margin: 0 auto; padding: 0 1.5rem 3rem; text-align: center; }
@@ -100,136 +184,190 @@
     }
     .social-link:hover { border-color: var(--gold); background: rgba(201,169,106,.12); }
     .social-link .handle { color: var(--gold); font-weight: 500; }
-    .copy { font-size: .72rem; font-weight: 300; letter-spacing: .12em; color: rgba(245,241,232,.5); }
+    .copy { font-size: .72rem; font-weight: 300; letter-spacing: .12em; color: rgba(245,241,232,.62); }
   </style>
 </head>
 <body>
+  <a class="skip" href="#shop" data-lang="en">Skip to shop</a>
+  <a class="skip" href="#shop" data-lang="es" hidden>Saltar a la tienda</a>
 
-  <nav>
+  <nav aria-label="Main">
     <a class="brand" href="#">R<span>O</span>NB<span>O</span></a>
-    <div class="nav-links">
-      <a href="#shop">Shop</a>
-      <a href="#about">About</a>
-      <a href="https://www.tiktok.com/@ronbo.store" target="_blank" rel="noopener">TikTok</a>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#shop" data-lang="en">Shop</a>
+        <a href="#shop" data-lang="es" hidden>Tienda</a>
+        <a href="#about" data-lang="en">About</a>
+        <a href="#about" data-lang="es" hidden>Nosotros</a>
+        <a href="https://www.tiktok.com/@ronbo.store" target="_blank" rel="noopener">TikTok</a>
+      </div>
+      <div class="lang-toggle" role="group" aria-label="Language / Idioma">
+        <button type="button" data-setlang="en" aria-pressed="true">EN</button>
+        <button type="button" data-setlang="es" aria-pressed="false">ES</button>
+      </div>
     </div>
   </nav>
 
   <header class="hero">
-    <img class="logo" src="ronbo-logo.webp" alt="Ronbo — Peace, Balance, Wellness" />
-    <p class="tagline">Peace • Balance • Wellness</p>
-    <p class="tagline-es">Paz • Equilibrio • Bienestar</p>
+    <h1 class="visually-hidden"><span data-lang="en">RONBO — Natural wellness essentials</span><span data-lang="es" hidden>Esenciales de bienestar natural</span></h1>
+    <img class="logo" src="ronbo-logo.webp" data-alt-es="Ronbo — Paz, Equilibrio, Bienestar" alt="Ronbo — Peace, Balance, Wellness" width="1400" height="631" fetchpriority="high" />
+    <p class="tagline" data-lang="en">Peace • Balance • Wellness</p>
+    <p class="tagline" data-lang="es" hidden>Paz • Equilibrio • Bienestar</p>
     <div class="rule"></div>
-    <p class="lead">Natural wellness essentials, chosen with intention.</p>
-    <p class="lead-es">Esenciales de bienestar natural, elegidos con intención.</p>
-    <a class="cta" href="#shop">Shop now &nbsp;·&nbsp; Comprar</a>
+    <p class="lead" data-lang="en">Natural wellness essentials, chosen with intention.</p>
+    <p class="lead-es" data-lang="es" hidden>Esenciales de bienestar natural, elegidos con intención.</p>
+    <a class="cta" href="#shop"><span data-lang="en">Shop now</span><span data-lang="es" hidden>Comprar</span></a>
   </header>
 
   <section class="shop" id="shop">
-    <h2 class="section-title">Shop</h2>
-    <p class="section-sub">Tienda</p>
+    <h2 class="section-title" data-lang="en">Shop</h2>
+    <h2 class="section-title" data-lang="es" hidden>Tienda</h2>
+    <p class="section-sub" data-lang="en">Wellness essentials</p>
+    <p class="section-sub" data-lang="es" hidden>Esenciales de bienestar</p>
     <div class="grid">
 
-      <article class="card">
-        <img src="product-1-tree-of-life.jpg" alt="Tree of Life Crystal Pendant Necklace" />
+      <article class="card" data-product="tree-of-life">
+        <picture>
+          <source srcset="product-1-tree-of-life.webp" type="image/webp" />
+          <img src="product-1-tree-of-life.jpg" data-alt-es="Collar Árbol de la Vida" alt="Tree of Life Crystal Pendant Necklace" width="1000" height="1000" loading="lazy" />
+        </picture>
         <div class="card-body">
-          <h3>Tree of Life Crystal Pendant Necklace</h3>
-          <p class="es">Collar con colgante Árbol de la Vida de cristal</p>
-          <p class="desc">Natural healing crystal pendant on a delicate chain — a timeless symbol of growth, strength and connection. Perfect for everyday wear or as a meaningful gift.</p>
-          <p class="desc-es">Colgante de cristal natural en una delicada cadena — símbolo de crecimiento, fuerza y conexión. Perfecto para el día a día o como un regalo especial.</p>
+          <h3 data-lang="en">Tree of Life Crystal Pendant Necklace</h3>
+          <h3 data-lang="es" hidden>Collar Árbol de la Vida</h3>
+          <p class="es" data-lang="en">Crystal tree-of-life pendant necklace</p>
+          <p class="es" data-lang="es" hidden>Collar con colgante Árbol de la Vida de cristal</p>
+          <p class="desc" data-lang="en">Natural healing crystal pendant on a delicate chain — a timeless symbol of growth, strength and connection. Perfect for everyday wear or as a meaningful gift.</p>
+          <p class="desc-es" data-lang="es" hidden>Colgante de cristal natural en una delicada cadena — símbolo de crecimiento, fuerza y conexión. Perfecto para el día a día o como un regalo especial.</p>
           <div class="price-row">
             <span class="price">$12.99</span>
-            <span class="stock">In stock</span>
+            <span class="stock"><span data-lang="en">In stock</span><span data-lang="es" hidden>En stock</span></span>
           </div>
-          <a class="buy" href="https://www.tiktok.com/@ronbo.store" target="_blank" rel="noopener">Buy on TikTok Shop<small>Comprar en TikTok Shop</small></a>
+          <!-- FASE 2: compra desactivada — producto sin listing confirmado en TikTok Shop.
+     Para reactivar: restaurar el <a class="buy"> original con el deep link verificado del producto. -->
+          <span class="buy buy-disabled" aria-disabled="true"><span data-lang="en">Available soon</span><span data-lang="es" hidden>Disponible próximamente</span></span>
         </div>
       </article>
 
-      <article class="card">
-        <img src="product-3-moon-necklace.jpg" alt="Chakra Moon Necklace" />
+      <article class="card" data-product="chakra-moon">
+        <picture>
+          <source srcset="product-3-moon-necklace.webp" type="image/webp" />
+          <img src="product-3-moon-necklace.jpg" data-alt-es="Collar Luna de chakras" alt="Chakra Moon Necklace" width="1000" height="1000" loading="lazy" />
+        </picture>
         <div class="card-body">
-          <h3>Chakra Moon Necklace</h3>
-          <p class="es">Collar Luna de chakras</p>
-          <p class="desc">Delicate moon pendant with natural chakra stones — a celestial piece for intuition, harmony and everyday mindfulness.</p>
-          <p class="desc-es">Delicado colgante de luna con piedras naturales de chakras — una pieza celestial para la intuición, la armonía y el mindfulness diario.</p>
+          <h3 data-lang="en">Chakra Moon Necklace</h3>
+          <h3 data-lang="es" hidden>Collar Luna de chakras</h3>
+          <p class="es" data-lang="en">Moon pendant with natural chakra stones</p>
+          <p class="es" data-lang="es" hidden>Collar Luna de chakras</p>
+          <p class="desc" data-lang="en">Delicate moon pendant with natural chakra stones — a celestial piece for intuition, harmony and everyday mindfulness.</p>
+          <p class="desc-es" data-lang="es" hidden>Delicado colgante de luna con piedras naturales de chakras — una pieza celestial para la intuición, la armonía y el mindfulness diario.</p>
           <div class="price-row">
             <span class="price">$12.99</span>
-            <span class="stock">In stock</span>
+            <span class="stock"><span data-lang="en">In stock</span><span data-lang="es" hidden>En stock</span></span>
           </div>
-          <a class="buy" href="https://www.tiktok.com/@ronbo.store" target="_blank" rel="noopener">Buy on TikTok Shop<small>Comprar en TikTok Shop</small></a>
+          <a class="buy" href="https://www.tiktok.com/@ronbo.store" target="_blank" rel="noopener"><span data-lang="en">Buy on TikTok Shop</span><span data-lang="es" hidden>Comprar en TikTok Shop</span></a>
         </div>
       </article>
 
-
-      <article class="card">
-        <img src="product-2-chakra-bracelet.jpg" alt="7-Chakra Beaded Bracelet" />
+      <article class="card" data-product="chakra-bracelet">
+        <picture>
+          <source srcset="product-2-chakra-bracelet.webp" type="image/webp" />
+          <img src="product-2-chakra-bracelet.jpg" data-alt-es="Pulsera 7 chakras" alt="7-Chakra Beaded Bracelet" width="589" height="576" loading="lazy" />
+        </picture>
         <div class="card-body">
-          <h3>7-Chakra Beaded Bracelet</h3>
-          <p class="es">Pulsera de cuentas de los 7 chakras</p>
-          <p class="desc">Natural stone beaded bracelet aligned with the seven chakras — a daily reminder of balance, calm and positive energy.</p>
-          <p class="desc-es">Pulsera de piedras naturales alineada con los siete chakras — un recordatorio diario de equilibrio, calma y energía positiva.</p>
+          <h3 data-lang="en">7-Chakra Beaded Bracelet</h3>
+          <h3 data-lang="es" hidden>Pulsera 7 chakras</h3>
+          <p class="es" data-lang="en">Beaded bracelet aligned with the seven chakras</p>
+          <p class="es" data-lang="es" hidden>Pulsera de cuentas de los 7 chakras</p>
+          <p class="desc" data-lang="en">Natural stone beaded bracelet aligned with the seven chakras — a daily reminder of balance, calm and positive energy.</p>
+          <p class="desc-es" data-lang="es" hidden>Pulsera de piedras naturales alineada con los siete chakras — un recordatorio diario de equilibrio, calma y energía positiva.</p>
           <div class="price-row">
             <span class="price">$14.99</span>
-            <span class="stock">In stock</span>
+            <span class="stock"><span data-lang="en">In stock</span><span data-lang="es" hidden>En stock</span></span>
           </div>
-          <a class="buy" href="https://www.tiktok.com/@ronbo.store" target="_blank" rel="noopener">Buy on TikTok Shop<small>Comprar en TikTok Shop</small></a>
+          <!-- FASE 2: compra desactivada — producto sin listing confirmado en TikTok Shop.
+     Para reactivar: restaurar el <a class="buy"> original con el deep link verificado del producto. -->
+          <span class="buy buy-disabled" aria-disabled="true"><span data-lang="en">Available soon</span><span data-lang="es" hidden>Disponible próximamente</span></span>
         </div>
       </article>
 
-      <article class="card">
-        <img src="product-4-reiki-pendant.jpg" alt="Reiki Healing Pendant" />
+      <article class="card" data-product="reiki-pendant">
+        <picture>
+          <source srcset="product-4-reiki-pendant.webp" type="image/webp" />
+          <img src="product-4-reiki-pendant.jpg" data-alt-es="Collar con colgante de Reiki" alt="Reiki Healing Pendant" width="800" height="800" loading="lazy" />
+        </picture>
         <div class="card-body">
-          <h3>Reiki Healing Pendant Necklace</h3>
-          <p class="es">Collar con colgante de Reiki</p>
-          <p class="desc">Natural stone pendant inspired by reiki practice — a grounding accessory for meditation, yoga and intentional living.</p>
-          <p class="desc-es">Colgante de piedra natural inspirado en la práctica del reiki — un accesorio para la meditación, el yoga y la vida intencional.</p>
+          <h3 data-lang="en">Reiki Healing Pendant Necklace</h3>
+          <h3 data-lang="es" hidden>Collar con colgante de Reiki</h3>
+          <p class="es" data-lang="en">Natural stone pendant for meditation and yoga</p>
+          <p class="es" data-lang="es" hidden>Collar con colgante de Reiki</p>
+          <p class="desc" data-lang="en">Natural stone pendant inspired by reiki practice — a grounding accessory for meditation, yoga and intentional living.</p>
+          <p class="desc-es" data-lang="es" hidden>Colgante de piedra natural inspirado en la práctica del reiki — un accesorio para la meditación, el yoga y la vida intencional.</p>
           <div class="price-row">
             <span class="price">$14.99</span>
-            <span class="stock">In stock</span>
+            <span class="stock"><span data-lang="en">In stock</span><span data-lang="es" hidden>En stock</span></span>
           </div>
-          <a class="buy" href="https://www.tiktok.com/@ronbo.store" target="_blank" rel="noopener">Buy on TikTok Shop<small>Comprar en TikTok Shop</small></a>
+          <!-- FASE 2: compra desactivada — producto sin listing confirmado en TikTok Shop.
+     Para reactivar: restaurar el <a class="buy"> original con el deep link verificado del producto. -->
+          <span class="buy buy-disabled" aria-disabled="true"><span data-lang="en">Available soon</span><span data-lang="es" hidden>Disponible próximamente</span></span>
         </div>
       </article>
 
-      <article class="card">
-        <img src="product-5-gua-sha.png" alt="Gua Sha 2-Piece Set" />
+      <article class="card" data-product="gua-sha">
+        <picture>
+          <source srcset="product-5-gua-sha.webp" type="image/webp" />
+          <img src="product-5-gua-sha.png" data-alt-es="Set de Gua Sha de 2 piezas" alt="Gua Sha 2-Piece Set" width="751" height="750" loading="lazy" />
+        </picture>
         <div class="card-body">
-          <h3>Gua Sha 2-Piece Set</h3>
-          <p class="es">Set de Gua Sha de 2 piezas</p>
-          <p class="desc">Natural stone gua sha set for facial massage rituals — for a mindful self-care routine, morning and night.</p>
-          <p class="desc-es">Set de gua sha de piedra natural para rituales de masaje facial — para una rutina de autocuidado consciente, mañana y noche.</p>
+          <h3 data-lang="en">Gua Sha 2-Piece Set</h3>
+          <h3 data-lang="es" hidden>Set de Gua Sha de 2 piezas</h3>
+          <p class="es" data-lang="en">Natural stone gua sha facial set</p>
+          <p class="es" data-lang="es" hidden>Set de Gua Sha de 2 piezas</p>
+          <p class="desc" data-lang="en">Natural stone gua sha set for facial massage rituals — for a mindful self-care routine, morning and night.</p>
+          <p class="desc-es" data-lang="es" hidden>Set de gua sha de piedra natural para rituales de masaje facial — para una rutina de autocuidado consciente, mañana y noche.</p>
           <div class="price-row">
             <span class="price">$19.99</span>
-            <span class="stock">In stock</span>
+            <span class="stock"><span data-lang="en">In stock</span><span data-lang="es" hidden>En stock</span></span>
           </div>
-          <a class="buy" href="https://www.tiktok.com/@ronbo.store" target="_blank" rel="noopener">Buy on TikTok Shop<small>Comprar en TikTok Shop</small></a>
+          <!-- FASE 2: compra desactivada — producto sin listing confirmado en TikTok Shop.
+     Para reactivar: restaurar el <a class="buy"> original con el deep link verificado del producto. -->
+          <span class="buy buy-disabled" aria-disabled="true"><span data-lang="en">Available soon</span><span data-lang="es" hidden>Disponible próximamente</span></span>
         </div>
       </article>
 
-      <article class="card">
-        <img src="product-6-yoga-belt.jpg" alt="Yoga Stretching Belt" />
+      <article class="card" data-product="yoga-belt">
+        <picture>
+          <source srcset="product-6-yoga-belt.webp" type="image/webp" />
+          <img src="product-6-yoga-belt.jpg" data-alt-es="Cinturón de estiramiento para yoga" alt="Yoga Stretching Belt" width="800" height="800" loading="lazy" />
+        </picture>
         <div class="card-body">
-          <h3>Yoga Stretching Belt</h3>
-          <p class="es">Cinturón de estiramiento para yoga</p>
-          <p class="desc">Adjustable stretching strap for yoga, dance and flexibility training — deepen every stretch with support and control.</p>
-          <p class="desc-es">Cinta de estiramiento ajustable para yoga, danza y entrenamiento de flexibilidad — profundiza cada estiramiento con soporte y control.</p>
+          <h3 data-lang="en">Yoga Stretching Belt</h3>
+          <h3 data-lang="es" hidden>Cinturón de estiramiento para yoga</h3>
+          <p class="es" data-lang="en">Adjustable stretching strap for yoga and flexibility</p>
+          <p class="es" data-lang="es" hidden>Cinturón de estiramiento para yoga</p>
+          <p class="desc" data-lang="en">Adjustable stretching strap for yoga, dance and flexibility training — deepen every stretch with support and control.</p>
+          <p class="desc-es" data-lang="es" hidden>Cinta de estiramiento ajustable para yoga, danza y entrenamiento de flexibilidad — profundiza cada estiramiento con soporte y control.</p>
           <div class="price-row">
             <span class="price">$14.99</span>
-            <span class="stock">Low stock</span>
+            <span class="stock"><span data-lang="en">Low stock</span><span data-lang="es" hidden>Poco stock</span></span>
           </div>
-          <a class="buy" href="https://www.tiktok.com/@ronbo.store" target="_blank" rel="noopener">Buy on TikTok Shop<small>Comprar en TikTok Shop</small></a>
+          <!-- FASE 2: compra desactivada — producto sin listing confirmado en TikTok Shop.
+     Para reactivar: restaurar el <a class="buy"> original con el deep link verificado del producto. -->
+          <span class="buy buy-disabled" aria-disabled="true"><span data-lang="en">Available soon</span><span data-lang="es" hidden>Disponible próximamente</span></span>
         </div>
       </article>
 
     </div>
-    <p class="more">More mindful goods coming soon · Más productos próximamente</p>
+    <p class="more"><span data-lang="en">More mindful goods coming soon</span><span data-lang="es" hidden>Más productos próximamente</span></p>
   </section>
 
   <section class="about" id="about">
-    <h2 class="section-title">About</h2>
-    <p class="section-sub">Nosotros</p>
+    <h2 class="section-title" data-lang="en">About</h2>
+    <h2 class="section-title" data-lang="es" hidden>Nosotros</h2>
+    <p class="section-sub" data-lang="en">Our story</p>
+    <p class="section-sub" data-lang="es" hidden>Nuestra historia</p>
     <div class="rule"></div>
-    <p>RONBO is a small wellness brand built on a simple belief: peace, balance and wellness are daily practices. Every piece is chosen with intention — natural materials, honest prices, shipped with care from the USA.</p>
-    <p class="es">RONBO es una pequeña marca de bienestar con una creencia simple: la paz, el equilibrio y el bienestar se practican a diario. Cada pieza es elegida con intención — materiales naturales, precios honestos, envío con cuidado desde EE. UU.</p>
+    <p data-lang="en">RONBO is a small wellness brand built on a simple belief: peace, balance and wellness are daily practices. Every piece is chosen with intention — natural materials, honest prices, shipped with care from the USA.</p>
+    <p class="es" data-lang="es" hidden>RONBO es una pequeña marca de bienestar con una creencia simple: la paz, el equilibrio y el bienestar se practican a diario. Cada pieza es elegida con intención — materiales naturales, precios honestos, envío con cuidado desde EE. UU.</p>
   </section>
 
   <footer>
@@ -237,8 +375,73 @@
       <a class="social-link" href="https://www.tiktok.com/@ronbo.store" target="_blank" rel="noopener">TikTok <span class="handle">@ronbo.store</span></a>
       <a class="social-link" href="https://www.instagram.com/ronbo.store" target="_blank" rel="noopener">Instagram <span class="handle">@ronbo.store</span></a>
     </div>
-    <p class="copy">© 2026 RONBO — ronbo.store · Peace • Balance • Wellness</p>
+    <p class="copy">© 2026 RONBO — ronbo.store · <span data-lang="en">Peace • Balance • Wellness</span><span data-lang="es" hidden>Paz • Equilibrio • Bienestar</span></p>
   </footer>
 
+  <!-- ============================================================
+       GOOGLE ANALYTICS 4 — DESACTIVADO (FASE 7)
+       No instalar sin: (1) aprobación del dueño, (2) revisión de privacidad,
+       (3) banner/aviso de consentimiento acorde a la Privacy Policy.
+       Para activar: sustituir G-XXXXXXXXXX por el Measurement ID real,
+       descomentar el bloque y poner window.ronboAnalytics.enabled = true.
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true });
+  </script>
+  ============================================================= -->
+  <script>
+  (function () {
+    var root = document.documentElement;
+    function setLang(l) {
+      if (l !== 'es' && l !== 'en') l = 'en';
+      root.setAttribute('lang', l);
+      document.querySelectorAll('[data-lang]').forEach(function (el) {
+        el.hidden = el.getAttribute('data-lang') !== l;
+      });
+      document.querySelectorAll('img[data-alt-es]').forEach(function (img) {
+        if (!img.getAttribute('data-alt-en')) img.setAttribute('data-alt-en', img.alt);
+        img.alt = (l === 'es') ? img.getAttribute('data-alt-es') : img.getAttribute('data-alt-en');
+      });
+      document.querySelectorAll('.lang-toggle button').forEach(function (b) {
+        b.setAttribute('aria-pressed', b.getAttribute('data-setlang') === l ? 'true' : 'false');
+      });
+      try { localStorage.setItem('ronbo-lang', l); } catch (e) {}
+    }
+    var initial = 'en';
+    try {
+      initial = localStorage.getItem('ronbo-lang') ||
+        ((navigator.language || 'en').toLowerCase().indexOf('es') === 0 ? 'es' : 'en');
+    } catch (e) {}
+    document.querySelectorAll('.lang-toggle button').forEach(function (b) {
+      b.addEventListener('click', function () { setLang(b.getAttribute('data-setlang')); });
+    });
+    setLang(initial);
+
+    /* Analytics hooks — DISABLED by default.
+       Enable only with the owner's approval after a privacy review.
+       When enabled, pushes standard e-commerce events to dataLayer and
+       dispatches CustomEvents (ronbo:*) for any tag manager. */
+    window.ronboAnalytics = {
+      enabled: false,
+      track: function (name, data) {
+        if (!this.enabled) return;
+        (window.dataLayer = window.dataLayer || []).push(Object.assign({ event: name }, data || {}));
+        document.dispatchEvent(new CustomEvent('ronbo:' + name, { detail: data || {} }));
+      }
+    };
+    document.querySelectorAll('a.buy').forEach(function (a) {
+      a.addEventListener('click', function () {
+        var card = a.closest('[data-product]');
+        window.ronboAnalytics.track('outbound_tiktok', {
+          product: card ? card.getAttribute('data-product') : null,
+          href: a.getAttribute('href')
+        });
+      });
+    });
+  })();
+  </script>
 </body>
 </html>
